@@ -26,18 +26,77 @@ $(document).ready(function () {
             768: {
                 items: 2, // 2 items on medium screens
             },
+            480: {
+                items: 1.2, // 1 and 20% items on medium screens
+            },
             // For small screens (mobile)
             0: {
                 items: 1, // 1 item on small screens
             }
         }
     });
-    const carousel = $(".destination-slider");
+    $(".trek-slider").owlCarousel({
+        items: 4,
+        margin:30,
+        loop: true,
+        autoplay: false,
+        nav: false,
+        dots: false,
+        responsive: {
+            // For large screens (desktop)
+            1200: {
+                items: 4, // 3 items on large screens
+            },
+            // For medium screens (tablets)
+            768: {
+                items: 3, // 2 items on medium screens
+            },
+            500: {
+                items: 2, // 2 items on medium screens
+            },
+            // For small screens (mobile)
+            0: {
+                items: 1.3, // 1 and 30% item on small screens
+            }
+        }
+    });
+    $(".car-slider").owlCarousel({
+        items: 3,
+        margin:30,
+        loop: true,
+        autoplay: false,
+        nav: false,
+        dots: false,
+        responsive: {
+            // For large screens (desktop)
+            1200: {
+                items: 3, // 3 items on large screens
+            },
+            // For medium screens (tablets)
+            768: {
+                items: 2,
+            },
+            // For small screens (mobile)
+            0: {
+                items: 1.2, // 1 and 20% item on small screens
+                
+            }
+        }
+    });
+    const destinationSlider = $(".destination-slider");
+    const trekSlider = $(".trek-slider");
+    const carSlider = $(".car-slider");
     $("#slidePrev").click(function () {
-        carousel.trigger("prev.owl.carousel"); // Move to previous slide
+        destinationSlider.trigger("prev.owl.carousel"); // Move to previous slide
     });
 
     $("#slideNext").click(function () {
-        carousel.trigger("next.owl.carousel"); // Move to next slide
+        destinationSlider.trigger("next.owl.carousel"); // Move to next slide
+    });
+    $("#slideNextTrek").click(function () {
+        trekSlider.trigger("next.owl.carousel"); // Move to next slide
+    });
+    $("#slideNextCar").click(function () {
+        carSlider.trigger("next.owl.carousel"); // Move to next slide
     });
 });
