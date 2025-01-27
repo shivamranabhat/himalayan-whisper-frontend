@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    const navbar = $(".navbar");
-
-    // Scroll event listener
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            navbar.addClass("fixed"); // Add 'fixed' class when scrolling
-        } else {
-            navbar.removeClass("fixed"); // Remove 'fixed' class when at the top
-        }
-    });
     $(".destination-slider").owlCarousel({
         items: 3,
         margin:30,
@@ -60,6 +50,31 @@ $(document).ready(function () {
             }
         }
     });
+    $(".adventure-slider").owlCarousel({
+        items: 4,
+        margin:30,
+        loop: true,
+        autoplay: false,
+        nav: false,
+        dots: false,
+        responsive: {
+            // For large screens (desktop)
+            1200: {
+                items: 4, // 4 items on large screens
+            },
+            // For medium screens (tablets)
+            768: {
+                items: 3, // 2 items on medium screens
+            },
+            500: {
+                items: 2, // 2 items on medium screens
+            },
+            // For small screens (mobile)
+            0: {
+                items: 1.3, // 1 and 30% item on small screens
+            }
+        }
+    });
     $(".car-slider").owlCarousel({
         items: 3,
         margin:30,
@@ -85,6 +100,7 @@ $(document).ready(function () {
     });
     const destinationSlider = $(".destination-slider");
     const trekSlider = $(".trek-slider");
+    const advSlider = $(".adventure-slider");
     const carSlider = $(".car-slider");
     $("#slidePrev").click(function () {
         destinationSlider.trigger("prev.owl.carousel"); // Move to previous slide
@@ -95,6 +111,9 @@ $(document).ready(function () {
     });
     $("#slideNextTrek").click(function () {
         trekSlider.trigger("next.owl.carousel"); // Move to next slide
+    });
+    $("#slideNextAdv").click(function () {
+        advSlider.trigger("next.owl.carousel"); // Move to next slide
     });
     $("#slideNextCar").click(function () {
         carSlider.trigger("next.owl.carousel"); // Move to next slide
