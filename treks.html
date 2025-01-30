@@ -94,228 +94,94 @@
     </section>
     <!-- section navbar -->
     <!-- section treks -->
-    <section class="treks px-6 md:px-10 lg:px-24 xl:px-32 py-10">
+    <section class="treks px-6 md:px-10 lg:px-24 xl:px-32 pt-6 md:pt-10">
         <div class="flex flex-col gap-y-8">
-            <div class="upper-col flex flex-col gap-y-4">
-                <h2 class="text-2xl font-semibold">Discover the Thrill of Trekking – Your Adventure Starts Here!</h2>
-                <ul
-                    class="lists flex gap-6 md:gap-10 overflow-x-auto text-sm font-semibold border-b border-gray-300 pb-2">
-                    <li id="category"
-                        class="cursor-pointer transition-all duration-300 hover:text-[#07904F] hover:ease-in-out uppercase text-[#07904F]">
-                        Category
-                    </li>
-                    <li id="location"
-                        class="cursor-pointer transition-all duration-300 hover:text-[#07904F] hover:ease-in-out uppercase ">
-                        Location
-                    </li>
-                    <li
-                        class="cursor-pointer transition-all duration-300 hover:text-[#07904F] hover:ease-in-out uppercase ">
-                        Route
-                    </li>
-                    <li
-                        class="cursor-pointer transition-all duration-300 hover:text-[#07904F] hover:ease-in-out uppercase ">
-                        Level
-                    </li>
-                </ul>
+            <h2 class="text-2xl font-semibold">Discover the Thrill of Trekking – Your Adventure Starts Here!</h2>
+            <div class="flex justify-end">
+                <span class="flex items-center cursor-pointer text-main">
+                    <span>Sort By:</span>
+                    <select class="cursor-pointer">
+                        <option value="All">All</option>
+                        <option value="Price">Price</option>
+                    </select>
+                </span>
             </div>
-            <div class="card-group">
-                <div class="details-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6" id="category">
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
+            <div class="grid grid-cols-2 md:grid-cols-6 border-t border-gray-300">
+                <div
+                    class="col-span-1 py-6 flex flex-col gap-6 md:gap-10 text-sm font-semibold border-b border-r border-gray-300 h-full pb-2">
+                    <div class="cursor-pointer flex flex-col gap-y-4 items-start uppercase">
+                        <h5 class="transition-all text-base duration-300 hover:text-[#07904F] hover:ease-in-out">
+                            Category</h5>
+                        <div class="semi-lists flex flex-col gap-y-3 text-main text-normal">
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                1</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                2</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                3</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                4</button>
+                        </div>
                     </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="cursor-pointer flex flex-col gap-y-4 items-start uppercase">
+                        <h5 class="transition-all text-base duration-300 hover:text-[#07904F] hover:ease-in-out">
+                            Location</h5>
+                        <div class="semi-lists flex flex-col gap-y-3 text-main text-normal">
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Location
+                                1</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Location
+                                2</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Location
+                                3</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Location
+                                4</button>
+                        </div>
                     </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
-                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
-                                alt="">
-                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
-                                <div class="title flex flex-col items-start gap-y-1">
-                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
-                                        Annapurna
-                                    </p>
-                                    <div class="flex gap-x-3 items-center">
-                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
-                                    </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="price flex flex-col items-start">
-                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
-                                    </h4>
-                                    <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="cursor-pointer flex flex-col gap-y-4 items-start uppercase">
+                        <h5 class="transition-all text-base duration-300 hover:text-[#07904F] hover:ease-in-out">
+                            Route</h5>
+                        <div class="semi-lists flex flex-col gap-y-3 text-main text-normal">
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
+                                1</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
+                                2</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
+                                3</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
+                                4</button>
+                        </div>
                     </div>
                 </div>
-                <div class="details-section hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6" id="location">
-                    <div class="item bg-[#F5F5F5] rounded-b-md">
-                        <a href="#" class="flex flex-col">
+                <div class="card-group col-span-5 py-6 pl-0 md:pl-6 border-b border-gray-300">
+                    <div class="details-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-1.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
                             <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
                                 alt="">
                             <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
@@ -325,32 +191,144 @@
                                     </p>
                                     <div class="flex gap-x-3 items-center">
                                         <h5 class="text-base">Annapurna Circuit Trek</h5>
-                                        <span class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
                                     </div>
-                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
                                 </div>
                                 <div class="price flex flex-col items-start">
                                     <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
                                     </h4>
                                     <span class="text-xs">Includes Taxes & Fees</span>
-                                    <button class="bg-[#ff941d] px-2 py-1 text-xs text-white mt-1">4 Days 5 Nights</button>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-3.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-1.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-3.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="not-found-message hidden py-10 flex justify-center border border-[#D9D9D9] rounded-md">
-                <p>No item found.</p>
-            </div>
+
         </div>
     </section>
-    <!-- section hero -->
+    <!-- section treks -->
 
 
 
     <!-- section banner -->
-    <section class="banner px-6 md:px-10 lg:px-24 xl:px-32 py-10">
+    <section class="banner px-6 md:px-10 lg:px-24 xl:px-32 py-6 md:py-10">
         <div class="relative flex flex-col md:block">
             <div
                 class="border-t border-l border-r border-[#D0CECE] flex md:hidden rounded-t-md h-fit bg-white flex-col gap-y-4 px-6 py-8">
@@ -444,7 +422,6 @@
                 src="https://rangin.com.np/assets/images/logo.png" class="w-24" alt="rangin-logo"> </a>
     </section>
     <!-- section bottom footer -->
-    <script src="./assets/js/tab-ii.js"></script>
     <script src="./assets/js/navbar.js"></script>
 
 </body>
