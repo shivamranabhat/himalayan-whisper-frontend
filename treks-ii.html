@@ -95,28 +95,10 @@
     <!-- section navbar -->
     <!-- section treks -->
     <section class="treks px-6 md:px-10 lg:px-24 xl:px-32 pt-6 md:pt-10">
-        <div class="flex flex-col gap-y-2">
-            <h2 class="text-xl lg:text-2xl font-semibold">Discover the Thrill of Trekking – Your Adventure Starts Here!
-                <span class="bg-[#4F515A] p-px rounded-xl text-xs font-normal px-3 text-white ml-4 hidden lg:inline">21
-                    items</span></h2>
-            <div class="flex lg:hidden items-center justify-between mt-4">
-                <div class="flex gap-x-4 items-center">
-                    <button class="text-lg font-bold">Location</button>
-                    <button class="text-lg font-bold">Level</button>
-                    <span
-                        class="bg-[#4F515A] p-px rounded-xl text-xs font-normal px-3 text-white hidden sm:inline lg:hidden">21
-                        items</span>
-                </div>
-                <span class="flex lg:hidden items-center cursor-pointer text-main">
-                    <span>Sort By:</span>
-                    <select class="cursor-pointer">
-                        <option value="All">All</option>
-                        <option value="Price">Price</option>
-                    </select>
-                </span>
-            </div>
+        <div class="flex flex-col gap-y-8">
+            <h2 class="text-2xl font-semibold">Discover the Thrill of Trekking – Your Adventure Starts Here!</h2>
             <div class="flex justify-end">
-                <span class="hidden lg:flex items-center cursor-pointer text-main">
+                <span class="flex items-center cursor-pointer text-main">
                     <span>Sort By:</span>
                     <select class="cursor-pointer">
                         <option value="All">All</option>
@@ -124,13 +106,25 @@
                     </select>
                 </span>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-6 border-t border-gray-300">
+            <div class="grid grid-cols-2 md:grid-cols-6 border-t border-gray-300">
                 <div
-                    class="col-span-1 py-6 hidden lg:flex flex-col gap-6 md:gap-10 text-sm font-semibold border-b border-r border-gray-300 h-full pb-2">
+                    class="col-span-1 py-6 flex flex-col gap-6 md:gap-10 text-sm font-semibold border-b border-r border-gray-300 h-full pb-2">
                     <div class="cursor-pointer flex flex-col gap-y-4 items-start uppercase">
-                        <h2 class="transition-all text-xl text-[#07904F]">
-                            Filter By</h2>
-                        <h5 class="transition-all text-base">
+                        <h5 class="transition-all text-base duration-300 hover:text-[#07904F] hover:ease-in-out">
+                            Category</h5>
+                        <div class="semi-lists flex flex-col gap-y-3 text-main text-normal">
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                1</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                2</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                3</button>
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Category
+                                4</button>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer flex flex-col gap-y-4 items-start uppercase">
+                        <h5 class="transition-all text-base duration-300 hover:text-[#07904F] hover:ease-in-out">
                             Location</h5>
                         <div class="semi-lists flex flex-col gap-y-3 text-main text-normal">
                             <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Location
@@ -144,163 +138,194 @@
                         </div>
                     </div>
                     <div class="cursor-pointer flex flex-col gap-y-4 items-start uppercase">
-                        <h5 class="transition-all text-base">
-                            Level</h5>
+                        <h5 class="transition-all text-base duration-300 hover:text-[#07904F] hover:ease-in-out">
+                            Route</h5>
                         <div class="semi-lists flex flex-col gap-y-3 text-main text-normal">
-                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Level
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
                                 1</button>
-                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Level
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
                                 2</button>
-                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Level
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
                                 3</button>
-                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Level
+                            <button class="transition-all duration-300 hover:text-[#07904F] hover:ease-in-out">Route
                                 4</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-group col-span-5 py-6 pl-0 lg:pl-6 border-b border-gray-300 flex flex-col gap-y-6">
-                    <div class="card grid grid-cols-3 lg:grid-cols-8 items-center border border-gray-300 rounded-md">
-                        <img src="./assets/images/trek.png" class="col-span-3 w-full h-48 sm:h-[18rem] lg:h-full rounded-md object-cover"
-                            alt="trek">
-                        <div class="details flex flex-col gap-y-8 col-span-5 p-4 md:p-6">
-                            <div class="upper-col flex flex-col gap-y-6">
-                                <div class="title">
-                                    <h5 class="text-base sm:text-lg font-semibold">Annapurna Circuit Trek: A Journey Through the
-                                        Himalayas</h5>
-                                    <p class="text-sm text-[#636363] mt-1">Lorem ipsum, or lipsum as it is sometimes
-                                        known,
-                                        is
-                                        dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="flex gap-x-4">
+                <div class="card-group col-span-5 py-6 pl-0 md:pl-6 border-b border-gray-300">
+                    <div class="details-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-1.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
                                     <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
                                         Annapurna
                                     </p>
-                                    <p class="text-main text-xs flex items-center gap-x-1"><svg width="18" height="15"
-                                            viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M17 1L11.5603 9.28711C11.1357 9.93395 10.1688 9.87422 9.8271 9.18004L8.1729 5.81996C7.83115 5.12578 6.86433 5.06605 6.43974 5.71289L1 14"
-                                                stroke="#07904F" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                        Challenging
-                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
                                 </div>
-                            </div>
-                            <div class="lower-col flex items-center justify-between">
-                                <a href="#"
-                                    class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
-                                    Now
-                                </a>
-                                <div class="price flex flex-col gap-y-1">
-                                    <h4 class="text-xl font-semibold">$305 <del
-                                            class="font-light text-lg text-main">$375</del>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
                                     </h4>
-                                    <span class="text-xs text-[#026837]">
-                                        4 Days 5 Nights
-                                    </span>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card grid grid-cols-3 lg:grid-cols-8 items-center border border-gray-300 rounded-md">
-                        <img src="./assets/images/trek.png" class="col-span-3 w-full h-48 sm:h-[18rem] lg:h-full rounded-md object-cover"
-                            alt="trek">
-                        <div class="details flex flex-col gap-y-8 col-span-5 p-4 md:p-6">
-                            <div class="upper-col flex flex-col gap-y-6">
-                                <div class="title">
-                                    <h5 class="text-base sm:text-lg font-semibold">Annapurna Circuit Trek: A Journey Through the
-                                        Himalayas</h5>
-                                    <p class="text-sm text-[#636363] mt-1">Lorem ipsum, or lipsum as it is sometimes
-                                        known,
-                                        is
-                                        dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="flex gap-x-4">
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
                                     <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
                                         Annapurna
                                     </p>
-                                    <p class="text-main text-xs flex items-center gap-x-1"><svg width="18" height="15"
-                                            viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M17 1L11.5603 9.28711C11.1357 9.93395 10.1688 9.87422 9.8271 9.18004L8.1729 5.81996C7.83115 5.12578 6.86433 5.06605 6.43974 5.71289L1 14"
-                                                stroke="#07904F" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                        Challenging
-                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
                                 </div>
-                            </div>
-                            <div class="lower-col flex items-center justify-between">
-                                <a href="#"
-                                    class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
-                                    Now
-                                </a>
-                                <div class="price flex flex-col gap-y-1">
-                                    <h4 class="text-xl font-semibold">$305 <del
-                                            class="font-light text-lg text-main">$375</del>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
                                     </h4>
-                                    <span class="text-xs text-[#026837]">
-                                        4 Days 5 Nights
-                                    </span>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card grid grid-cols-3 lg:grid-cols-8 items-center border border-gray-300 rounded-md">
-                        <img src="./assets/images/trek.png" class="col-span-3 w-full h-48 sm:h-[18rem] lg:h-full rounded-md object-cover"
-                            alt="trek">
-                        <div class="details flex flex-col gap-y-8 col-span-5 p-4 md:p-6">
-                            <div class="upper-col flex flex-col gap-y-6">
-                                <div class="title">
-                                    <h5 class="text-base sm:text-lg font-semibold">Annapurna Circuit Trek: A Journey Through the
-                                        Himalayas</h5>
-                                    <p class="text-sm text-[#636363] mt-1">Lorem ipsum, or lipsum as it is sometimes
-                                        known,
-                                        is
-                                        dummy text used in laying out print, graphic or web designs.</p>
-                                </div>
-                                <div class="flex gap-x-4">
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-3.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
                                     <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
                                         Annapurna
                                     </p>
-                                    <p class="text-main text-xs flex items-center gap-x-1"><svg width="18" height="15"
-                                            viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M17 1L11.5603 9.28711C11.1357 9.93395 10.1688 9.87422 9.8271 9.18004L8.1729 5.81996C7.83115 5.12578 6.86433 5.06605 6.43974 5.71289L1 14"
-                                                stroke="#07904F" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                        Challenging
-                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
                                 </div>
-                            </div>
-                            <div class="lower-col flex items-center justify-between">
-                                <a href="#"
-                                    class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
-                                    Now
-                                </a>
-                                <div class="price flex flex-col gap-y-1">
-                                    <h4 class="text-xl font-semibold">$305 <del
-                                            class="font-light text-lg text-main">$375</del>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
                                     </h4>
-                                    <span class="text-xs text-[#026837]">
-                                        4 Days 5 Nights
-                                    </span>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <a href="#"
-                            class="text-xs border border-main text-main px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Show
-                            More Treks</a>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-1.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-2.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] rounded-b-md">
+                            <img src="./assets/images/trek/trek-3.png" class="w-full h-36 rounded-t-md object-cover"
+                                alt="">
+                            <div class="details flex flex-col gap-y-3 p-4 md:p-6 text-[#636363]">
+                                <div class="title flex flex-col items-start gap-y-1">
+                                    <p class="bg-[#026837] text-white px-4 py-1 font-medium rounded-sm text-xs">
+                                        Annapurna
+                                    </p>
+                                    <div class="flex gap-x-3 items-center">
+                                        <h5 class="text-base">Annapurna Circuit Trek</h5>
+                                        <span
+                                            class="bg-[#4F515A] p-px rounded-xl text-[0.6rem] px-3 text-white">Hard</span>
+                                    </div>
+                                    <p class="text-[0.6rem]">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="price flex flex-col items-start">
+                                    <h4 class="text-lg font-semibold">$305 <del class="font-light text-base">$375</del>
+                                    </h4>
+                                    <span class="text-xs">Includes Taxes & Fees</span>
+                                    <a href="#"
+                                        class="bg-white text-main rounded-3xl px-4 py-1 text-base font-medium border border-gray-400 mt-3 transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Book
+                                        Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- section treks -->
+
+
 
     <!-- section banner -->
     <section class="banner px-6 md:px-10 lg:px-24 xl:px-32 py-6 md:py-10">
