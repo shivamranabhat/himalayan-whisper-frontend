@@ -24,3 +24,17 @@ html,body{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     background-color: #fff;
 }
+
+.description h1, .description h2, .description h3, .description h4, .description h5
+{
+    font-family: "Poppins", serif !important;
+    margin-bottom: 1rem !important;
+} 
+.description p, .description span, .description ul li, .description ol li{
+    color: #636363 !important;
+    font-family: "Poppins", serif !important;
+}
+.description ul li{
+    list-style-type: disc;
+    margin-left: 1rem;
+}
