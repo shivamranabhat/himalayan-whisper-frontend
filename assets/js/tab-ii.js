@@ -8,8 +8,10 @@ const notFoundMessage = document.querySelector('.not-found-message');
 filterItems.forEach(item => {
     item.addEventListener('click', function () {
         // Remove active styles (text color and border) from all filter items
-        filterItems.forEach(li => li.classList.remove('text-[#07904F]'));
+        filterItems.forEach(li => li.classList.remove('text-[#07904F]', 'border-b-2', 'border-[#07904F]'));
 
+        // Add active style to the clicked filter item (text color and border)
+        this.classList.add('text-[#07904F]', 'border-b-2', 'border-[#07904F]');
         // Add active style to the clicked filter item (text color and border)
         this.classList.add('text-[#07904F]');
 

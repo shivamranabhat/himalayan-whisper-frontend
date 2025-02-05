@@ -38,3 +38,13 @@ html,body{
     list-style-type: disc;
     margin-left: 1rem;
 }
+
+
+
+.accordion .title svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion .title svg.rotate-180 {
+    transform: rotate(180deg);
+}
