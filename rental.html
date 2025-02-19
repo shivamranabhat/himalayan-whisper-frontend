@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental | Himalayan Whisper</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        main: "#4F515A",
+                    },
+                },
+            },
+        };
+    </script>
+
+
+</head>
+
+<body>
+    <!-- section navbar -->
+    <section class="navbar px-6 md:px-10 lg:px-24 xl:px-32 py-2 box-shadow">
+        <nav class="flex justify-between items-center">
+            <div class="left-container flex items-center gap-x-10">
+                <img src="./assets/images/logo.png" class="w-20 h-12 object-cover" alt="logo">
+
+                <div class="font-semibold text-main text-sm relative">
+                    <div class="group">
+                        <div class="cursor-pointer flex items-center gap-x-2">
+                            <span>Destinations</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                                stroke="currentColor" class="size-3 mt-[2px]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <ul
+                            class="absolute left-0 border border-gray-300 hidden group-hover:flex flex-col gap-y-4 bg-white shadow-lg p-4 w-full z-10 box-shadow-ii rounded-md">
+                            <li class="cursor-pointer transition-all hover:text-black duration-300 hover:ease-in-out">
+                                Pokhara</li>
+                            <li class="cursor-pointer transition-all hover:text-black duration-300 hover:ease-in-out">
+                                Pokhara</li>
+                            <li class="cursor-pointer transition-all hover:text-black duration-300 hover:ease-in-out">
+                                Pokhara</li>
+                            <li class="cursor-pointer transition-all hover:text-black duration-300 hover:ease-in-out">
+                                Pokhara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="links hidden lg:flex items-center gap-x-8 text-sm">
+                <ul class="flex cursor-pointer items-center gap-x-8 text-sm text-main font-semibold">
+                    <li>Treks</li>
+                    <li>Tours</li>
+                    <li>Activities</li>
+                    <li>Vechiles Rental</li>
+                    <li>Flights</li>
+                    <li>About Us</li>
+                </ul>
+                <select class="font-semibold text-main cursor-pointer focus:outline-none focus:border-none">
+                    <option value="">USD</option>
+                    <option value="">AUD</option>
+                    <option value="">GBP</option>
+                </select>
+                <button>
+                    <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42H33C35.7956 42 37.1935 42 38.2961 41.5433C39.7663 40.9343 40.9343 39.7663 41.5433 38.2961C42 37.1935 42 35.7956 42 33V24C42 14.0589 33.9411 6 24 6ZM16 22C16 20.8954 16.8954 20 18 20H30C31.1046 20 32 20.8954 32 22C32 23.1046 31.1046 24 30 24H18C16.8954 24 16 23.1046 16 22ZM22 30C22 28.8954 22.8954 28 24 28H30C31.1046 28 32 28.8954 32 30C32 31.1046 31.1046 32 30 32H24C22.8954 32 22 31.1046 22 30Z"
+                            fill="#1B1F26" fill-opacity="0.72" />
+                    </svg>
+                </button>
+            </div>
+            <button class="block lg:hidden">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42H33C35.7956 42 37.1935 42 38.2961 41.5433C39.7663 40.9343 40.9343 39.7663 41.5433 38.2961C42 37.1935 42 35.7956 42 33V24C42 14.0589 33.9411 6 24 6ZM16 22C16 20.8954 16.8954 20 18 20H30C31.1046 20 32 20.8954 32 22C32 23.1046 31.1046 24 30 24H18C16.8954 24 16 23.1046 16 22ZM22 30C22 28.8954 22.8954 28 24 28H30C31.1046 28 32 28.8954 32 30C32 31.1046 31.1046 32 30 32H24C22.8954 32 22 31.1046 22 30Z"
+                        fill="#1B1F26" fill-opacity="0.72" />
+                </svg>
+            </button>
+        </nav>
+    </section>
+    <!-- section navbar -->
+    <!-- section rental -->
+    <section class="rental px-6 md:px-10 lg:px-24 xl:px-32 pt-6 md:pt-10">
+        <div class="flex flex-col gap-y-6 md:gap-y-10">
+            <h1 class="text-xl lg:text-2xl font-semibold text-main">Vehicle Rental</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card grid grid-cols-3 lg:grid-cols-9">
+                    <div
+                        class="col-span-2 lg:col-span-5 bg-[#FDDB32] flex flex-col gap-y-3 py-4 px-4 md:px-6 rounded-l-md">
+                        <h5 class="font-medium text-sm md:text-base"> Lorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit</h5>
+                        <p class="font-semibold">NPR 15,000/Day</p>
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./assets/images/car-1.png" class="w-full h-full rounded-r-md object-cover" alt="car">
+                    </div>
+                </div>
+                <div class="card grid grid-cols-3 lg:grid-cols-9">
+                    <div
+                        class="col-span-2 lg:col-span-5 bg-[#FDDB32] flex flex-col gap-y-3 py-4 px-4 md:px-6 rounded-l-md">
+                        <h5 class="font-medium text-sm md:text-base"> Lorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit</h5>
+                        <p class="font-semibold">NPR 15,000/Day</p>
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./assets/images/car-1.png" class="w-full h-full rounded-r-md object-cover" alt="car">
+                    </div>
+                </div>
+                <div class="card grid grid-cols-3 lg:grid-cols-9">
+                    <div
+                        class="col-span-2 lg:col-span-5 bg-[#FDDB32] flex flex-col gap-y-3 py-4 px-4 md:px-6 rounded-l-md">
+                        <h5 class="font-medium text-sm md:text-base"> Lorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit</h5>
+                        <p class="font-semibold">NPR 15,000/Day</p>
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./assets/images/car-1.png" class="w-full h-full rounded-r-md object-cover" alt="car">
+                    </div>
+                </div>
+                <div class="card grid grid-cols-3 lg:grid-cols-9">
+                    <div
+                        class="col-span-2 lg:col-span-5 bg-[#FDDB32] flex flex-col gap-y-3 py-4 px-4 md:px-6 rounded-l-md">
+                        <h5 class="font-medium text-sm md:text-base"> Lorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit</h5>
+                        <p class="font-semibold">NPR 15,000/Day</p>
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./assets/images/car-1.png" class="w-full h-full rounded-r-md object-cover" alt="car">
+                    </div>
+                </div>
+                <div class="card grid grid-cols-3 lg:grid-cols-9">
+                    <div
+                        class="col-span-2 lg:col-span-5 bg-[#FDDB32] flex flex-col gap-y-3 py-4 px-4 md:px-6 rounded-l-md">
+                        <h5 class="font-medium text-sm md:text-base"> Lorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit</h5>
+                        <p class="font-semibold">NPR 15,000/Day</p>
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./assets/images/car-1.png" class="w-full h-full rounded-r-md object-cover" alt="car">
+                    </div>
+                </div>
+                <div class="card grid grid-cols-3 lg:grid-cols-9">
+                    <div
+                        class="col-span-2 lg:col-span-5 bg-[#FDDB32] flex flex-col gap-y-3 py-4 px-4 md:px-6 rounded-l-md">
+                        <h5 class="font-medium text-sm md:text-base"> Lorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit</h5>
+                        <p class="font-semibold">NPR 15,000/Day</p>
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./assets/images/car-1.png" class="w-full h-full rounded-r-md object-cover" alt="car">
+                    </div>
+                </div>
+                <div class="flex justify-center col-span-1 md:col-span-2 lg:col-span-3">
+                    <a href="#"
+                        class="text-xs border border-main text-main px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-main hover:text-white hover:ease-in-out">Show
+                        More Vehicles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section rental -->
+
+    <!-- section banner -->
+    <section class="banner px-6 md:px-10 lg:px-24 xl:px-32 py-6 md:py-10">
+        <div class="relative flex flex-col md:block">
+            <div
+                class="border-t border-l border-r border-[#D0CECE] flex md:hidden rounded-t-md h-fit bg-white flex-col gap-y-4 px-6 py-8">
+                <h5 class="font-semibold text-lg lg:text-xl">Big January Sale:
+                    Save 13% or more</h5>
+                <p class="text-sm">One Key™ members save 25% or more
+                    on select hotels until Jan 26 (hotels time).
+                    Stay by Sep 14, 2025.</p>
+                <div class="mt-2">
+                    <a href="#"
+                        class="bg-[#03361E] text-white text-center px-6 py-2 text-sm rounded-3xl transition-all duration-300 hover:bg-[#054E2C] hover:ease-in-out">Learn
+                        More</a>
+                </div>
+            </div>
+            <img src="./assets/images/banner.png"
+                class="h-[40vh] lg:h-[50vh] w-full object-cover rounded-b-md md:rounded-md" alt="banner">
+            <div
+                class="absolute hidden md:flex rounded-md top-1/2 transform -translate-y-1/2 mx-auto lg:mx-0 left-0 lg:left-20 right-0 lg:right-auto w-[60%] lg:w-[35%] xl:w-[25%] h-fit content bg-white flex-col gap-y-4 p-6">
+                <h5 class="font-semibold text-lg lg:text-xl">Big January Sale:
+                    Save 13% or more</h5>
+                <p class="text-sm">One Key™ members save 25% or more
+                    on select hotels until Jan 26 (hotels time).
+                    Stay by Sep 14, 2025.</p>
+                <a href="#"
+                    class="bg-[#03361E] text-white text-center px-4 py-2 rounded-3xl transition-all duration-300 hover:bg-[#054E2C] hover:ease-in-out">Learn
+                    More</a>
+            </div>
+        </div>
+    </section>
+    <!-- section banner -->
+    <!-- section footer -->
+    <section class="footer bg-[#DFEDFB]">
+        <div class="logo px-6 md:px-10 lg:px-24 xl:px-32 pt-10">
+
+            <img src="./assets/images/logo.png" class="w-28 h-18 object-cover" alt="logo">
+        </div>
+        <div
+            class="grid grid-cols-6 xl:grid-cols-12 gap-6 xl:gap-10 px-6 md:px-10 lg:px-24 xl:px-32 pb-10 text-[#636363]">
+            <div class="col-span-6 xl:col-span-3 mt-6 border-b xl:border-b-0 pb-6 md:pb-8 xl:pb-0 border-gray-300">
+                <p class="text-sm leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div
+                class="col-span-6 xl:col-span-2 flex flex-col gap-y-2 border-b pb-6 md:pb-8 xl:pb-0 xl:border-b-0 xl:border-r xl:border-l items-start xl:items-center border-gray-300">
+                <h5 class="text-black font-semibold mr-3">Company</h5>
+                <ul class="text-sm text-[#636363] flex flex-col gap-y-2">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div
+                class="col-span-6 xl:col-span-3 flex flex-col gap-y-2 border-b xl:border-b-0 pb-6 md:pb-8 xl:pb-0 border-gray-300">
+                <h5 class="text-black font-semibold">Explore</h5>
+                <ul class="text-sm text-[#636363] flex flex-col gap-y-2">
+                    <li><a href="#">Annapurna Circuit Trek, 4 Night 5 Days</a></li>
+                    <li><a href="#">Annapurna Circuit Trek, 4 Night 5 Days</a></li>
+                    <li><a href="#">Annapurna Circuit Trek, 4 Night 5 Days</a></li>
+                    <li><a href="#">Annapurna Circuit Trek, 4 Night 5 Days</a></li>
+                </ul>
+            </div>
+            <div class="col-span-6 xl:col-span-4 flex flex-col pl-0 xl:pl-8 gap-y-2 xl:border-l border-gray-300">
+                <h5 class="text-black font-semibold">Destinations</h5>
+                <ul class="text-sm grid grid-cols-3 justify-items-between gap-2 text-[#636363] flex justify-between">
+                    <li><a href="#">Kathmandu</a></li>
+                    <li><a href="#">Pokhara</a></li>
+                    <li><a href="#">Chitwan</a></li>
+                    <li><a href="#">Butwal</a></li>
+                    <li><a href="#">Kathmandu</a></li>
+                    <li><a href="#">Pokhara</a></li>
+                    <li><a href="#">Chitwan</a></li>
+                    <li><a href="#">Butwal</a></li>
+                    <li><a href="#">Kathmandu</a></li>
+                    <li><a href="#">Pokhara</a></li>
+                    <li><a href="#">Chitwan</a></li>
+                    <li><a href="#">Butwal</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="p-6 flex justify-center items-center border-t border-gray-300">
+            <p class="text-sm text-[#636363]">© 2025 Himalayan Whisper Travel and Tours. All rights reserved.
+            </p>
+        </div>
+    </section>
+    <!-- section footer -->
+    <!-- section bottom footer -->
+    <section class="bottom-footer p-6 flex justify-end">
+        <a href="https://rangin.com.np/" class="flex gap-4 font-medium">Design &amp; Develop by <img
+                src="https://rangin.com.np/assets/images/logo.png" class="w-24" alt="rangin-logo"> </a>
+    </section>
+    <!-- section bottom footer -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/tab-ii.js"></script>
+
+</body>
+
+</html>

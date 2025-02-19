@@ -48,3 +48,7 @@ html,body{
 .accordion .title svg.rotate-180 {
     transform: rotate(180deg);
 }
+
+iframe{
+    width: 100%!important;
+}
